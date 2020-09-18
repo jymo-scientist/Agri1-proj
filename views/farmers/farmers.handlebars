@@ -1,0 +1,48 @@
+ 
+<h1 style="color: blue ">Write your complaint...</h1>
+   <form  action ="/farmers" method ="POST" autocomplete="off">
+<div class="row mt-5">
+   <div class="row">
+    <form class="col s6">
+      <div class="row">
+        <div class="input-field col s3">
+       <div>
+        <label>Name</label>
+             <input type ="text" class ="form-control" name ="Name" placeholder="Name"value="{{farmers.Name}}">
+     </div>
+     <div style="color:red">{{farmers.NameError}}</div>
+     <div>
+        <label>Email</label>
+             <input type ="text" class ="form-control" name ="Email" placeholder="Email" value ="{{farmers.Email}}">
+     </div>
+     <div style="color:red" >{{farmers.EmailError}}</div>
+     <div>
+        <label>County</label>
+             <input type ="text" class ="form-control" name ="County" placeholder="County"value = "{{farmers.County}}">
+     </div>
+ <div style="color:red">{{farmers.CountyError}}</div>
+       <div>
+      <label>Mobile</label> 
+             <input type ="text" class ="form-control" name ="Mobile" placeholder="mobile number" height= "100px" value = "{{farmers.Mobile}}">
+             </div>
+             <div style="color:red">{{farmers.MobileError}}</div>
+       <div>
+      <label>Location</label>
+             <input type ="text" class ="form-control" name ="Location" placeholder="your location" height= "100px" value = "{{farmers.Location}}">
+             <div style="color:red">{{farmers.LocationError}}</div>
+     </div>
+     <div>
+      <label>Complaint</label>
+             <input type ="text" class ="form-control" name ="Complaint" placeholder="complaint" height= "100px" value = "{{farmers.Complaint}}">
+             <div style="color:red">{{farmers.ComplaintError}}</div>
+     </div>
+     <div class =form-group>
+         <button type="submit" class="">Post</button>
+     </div>
+       </div>
+            </form>
+           </div>
+       </div>
+        </div>
+</form>  
+    

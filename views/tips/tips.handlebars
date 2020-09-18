@@ -1,0 +1,17 @@
+<h3>{{ViewTitle}}</h3>  
+<form action="/tips" method="POST" autocomplete="off">  
+<div class="row">
+    <form class="col s6">
+      <div class="row">
+        <div class="input-field col s3">
+           Crop_type: <input type="text" placeholder="crop-type" name="Crop" value="{{tips.Crop}}"><br />  
+           <div style="color:brown">{{tips.CropError}}</div>
+            Tips: <input type="text" placeholder="tips" name="Tips" value ="{{tips.Tips}}"><br/>  
+             <div style="color:brown">{{tips.TipsError}}</div>
+                  <button type="submit" class="">Post</button>
+                 </div>
+            </form>
+           </div>
+       </div>
+</form>  
+  
